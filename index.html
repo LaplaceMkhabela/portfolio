@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <style>
+        /* Custom styles for better visual appeal and responsiveness */
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f0f2f5; /* Light grey background */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh; /* Ensure it takes full viewport height */
+            padding: 20px; /* Add some padding around the content */
+        }
+        .skill-card {
+            background-color: #ffffff;
+            border-radius: 12px; /* More rounded corners */
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.08); /* Softer, larger shadow */
+            transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 24px; /* Increased padding */
+            min-height: 180px; /* Ensure consistent card height */
+        }
+        .skill-card:hover {
+            transform: translateY(-8px) scale(1.02); /* Slight lift and scale on hover */
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.12); /* Enhanced shadow on hover */
+        }
+        .skill-image {
+            width: 80px; /* Larger image placeholder */
+            height: 80px; /* Larger image placeholder */
+            margin-bottom: 16px; /* Spacing below image */
+            border-radius: 8px; /* Rounded image corners */
+            object-fit: contain; /* Ensure image fits */
+        }
+        .skill-text {
+            font-size: 1.1rem; /* Slightly larger text */
+            font-weight: 600; /* Bolder text */
+            color: #333;
+        }
+        .section-title {
+            font-size: 3.5rem; /* Larger title */
+            font-weight: 700; /* Bolder title */
+            color: #2c3e50; /* Darker title color */
+            margin-bottom: 40px; /* More space below title */
+            text-decoration: underline; /* Underline as per image */
+            text-decoration-color: #6a0dad; /* Purple underline */
+            text-underline-offset: 8px; /* Offset underline */
+        }
+
+        /* Responsive adjustments for the grid */
+        @media (min-width: 640px) { /* sm */
+            .grid-cols-sm {
+                grid-template-columns: repeat(2, minmax(0, 1fr));
+            }
+        }
+        @media (min-width: 768px) { /* md */
+            .grid-cols-md {
+                grid-template-columns: repeat(3, minmax(0, 1fr));
+            }
+        }
+        @media (min-width: 1024px) { /* lg */
+            .grid-cols-lg {
+                grid-template-columns: repeat(4, minmax(0, 1fr));
+            }
+        }
+        @media (min-width: 1280px) { /* xl */
+            .grid-cols-xl {
+                grid-template-columns: repeat(7, minmax(0, 1fr)); /* 7 columns for larger screens */
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container mx-auto p-4 max-w-7xl">
+        <h1 class="section-title text-center mb-12">Technical Skills</h1>
+
+        <div class="grid grid-cols-2 gap-8 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-7">
+            <div class="skill-card wow animate__animated animate__bounceInUp" data-wow-delay="0.1s">
+                <img src="https://placehold.co/80x80/6a0dad/ffffff?text=Image" alt="Skill Image" class="skill-image">
+                <p class="skill-text">Text 1</p>
+            </div>
+            <div class="skill-card wow animate__animated animate__bounceInUp" data-wow-delay="0.2s">
+                <img src="https://placehold.co/80x80/6a0dad/ffffff?text=Image" alt="Skill Image" class="skill-image">
+                <p class="skill-text">Text 2</p>
+            </div>
+            <div class="skill-card wow animate__animated animate__bounceInUp" data-wow-delay="0.3s">
+                <img src="https://placehold.co/80x80/6a0dad/ffffff?text=Image" alt="Skill Image" class="skill-image">
+                <p class="skill-text">Text 3</p>
+            </div>
+            <div class="skill-card wow animate__animated animate__bounceInUp" data-wow-delay="0.4s">
+                <img src="https://placehold.co/80x80/6a0dad/ffffff?text=Image" alt="Skill Image" class="skill-image">
+                <p class="skill-text">Text 4</p>
+            </div>
+            <div class="skill-card wow animate__animated animate__bounceInUp" data-wow-delay="0.5s">
+                <img src="https://placehold.co/80x80/6a0dad/ffffff?text=Image" alt="Skill Image" class="skill-image">
+                <p class="skill-text">Text 5</p>
+            </div>
+            <div class="skill-card wow animate__animated animate__bounceInUp" data-wow-delay="0.6s">
+                <img src="https://placehold.co/80x80/6a0dad/ffffff?text=Image" alt="Skill Image" class="skill-image">
+                <p class="skill-text">Text 6</p>
+            </div>
+            <div class="skill-card wow animate__animated animate__bounceInUp" data-wow-delay="0.7s">
+                <img src="https://placehold.co/80x80/6a0dad/ffffff?text=Image" alt="Skill Image" class="skill-image">
+                <p class="skill-text">Text 7</p>
+            </div>
+
+            <div class="skill-card wow animate__animated animate__bounceInUp" data-wow-delay="0.8s">
+                <img src="https://placehold.co/80x80/6a0dad/ffffff?text=Image" alt="Skill Image" class="skill-image">
+                <p class="skill-text">Text 8</p>
+            </div>
+            <div class="skill-card wow animate__animated animate__bounceInUp" data-wow-delay="0.9s">
+                <img src="https://placehold.co/80x80/6a0dad/ffffff?text=Image" alt="Skill Image" class="skill-image">
+                <p class="skill-text">Text 9</p>
+            </div>
+            <div class="skill-card wow animate__animated animate__bounceInUp" data-wow-delay="1.0s">
+                <img src="https://placehold.co/80x80/6a0dad/ffffff?text=Image" alt="Skill Image" class="skill-image">
+                <p class="skill-text">Text 10</p>
+            </div>
+            <div class="skill-card wow animate__animated animate__bounceInUp" data-wow-delay="1.1s">
+                <img src="https://placehold.co/80x80/6a0dad/ffffff?text=Image" alt="Skill Image" class="skill-image">
+                <p class="skill-text">Text 11</p>
+            </div>
+            <div class="skill-card wow animate__animated animate__bounceInUp" data-wow-delay="1.2s">
+                <img src="https://placehold.co/80x80/6a0dad/ffffff?text=Image" alt="Skill Image" class="skill-image">
+                <p class="skill-text">Text 12</p>
+            </div>
+            <div class="skill-card wow animate__animated animate__bounceInUp" data-wow-delay="1.3s">
+                <img src="https://placehold.co/80x80/6a0dad/ffffff?text=Image" alt="Skill Image" class="skill-image">
+                <p class="skill-text">Text 13</p>
+            </div>
+            <div class="skill-card wow animate__animated animate__bounceInUp" data-wow-delay="1.4s">
+                <img src="https://placehold.co/80x80/6a0dad/ffffff?text=Image" alt="Skill Image" class="skill-image">
+                <p class="skill-text">Text 14</p>
+            </div>
+
+            <div class="skill-card wow animate__animated animate__bounceInUp" data-wow-delay="1.5s">
+                <img src="https://placehold.co/80x80/6a0dad/ffffff?text=Image" alt="Skill Image" class="skill-image">
+                <p class="skill-text">Text 15</p>
+            </div>
+            <div class="skill-card wow animate__animated animate__bounceInUp" data-wow-delay="1.6s">
+                <img src="https://placehold.co/80x80/6a0dad/ffffff?text=Image" alt="Skill Image" class="skill-image">
+                <p class="skill-text">Text 16</p>
+            </div>
+            <div class="skill-card wow animate__animated animate__bounceInUp" data-wow-delay="1.7s">
+                <img src="https://placehold.co/80x80/6a0dad/ffffff?text=Image" alt="Skill Image" class="skill-image">
+                <p class="skill-text">Text 17</p>
+            </div>
+            <div class="skill-card wow animate__animated animate__bounceInUp" data-wow-delay="1.8s">
+                <img src="https://placehold.co/80x80/6a0dad/ffffff?text=Image" alt="Skill Image" class="skill-image">
+                <p class="skill-text">Text 18</p>
+            </div>
+            <div class="skill-card wow animate__animated animate__bounceInUp" data-wow-delay="1.9s">
+                <img src="https://placehold.co/80x80/6a0dad/ffffff?text=Image" alt="Skill Image" class="skill-image">
+                <p class="skill-text">Text 19</p>
+            </div>
+            <div class="skill-card wow animate__animated animate__bounceInUp" data-wow-delay="2.0s">
+                <img src="https://placehold.co/80x80/6a0dad/ffffff?text=Image" alt="Skill Image" class="skill-image">
+                <p class="skill-text">Text 20</p>
+            </div>
+            <div class="skill-card wow animate__animated animate__bounceInUp" data-wow-delay="2.1s">
+                <img src="https://placehold.co/80x80/6a0dad/ffffff?text=Image" alt="Skill Image" class="skill-image">
+                <p class="skill-text">Text 21</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+    <script>
+        // Initialize WOW.js
+        new WOW().init();
+    </script>
+</body>
+</html>
