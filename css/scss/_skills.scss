@@ -1,0 +1,65 @@
+.grid{
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    gap: 20px 20px;
+}
+
+.skills{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 90vh;
+}
+
+.skill-card {
+    background-color: #ffffff;
+    border-radius: 12px; /* More rounded corners */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.08); /* Softer, larger shadow */
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 24px; /* Increased padding */
+    min-height: 180px; /* Ensure consistent card height */
+}
+.skill-card:hover {
+    transform: translateY(-8px) scale(1.02); /* Slight lift and scale on hover */
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.12); /* Enhanced shadow on hover */
+}
+.skill-image {
+    width: 80px; /* Larger image placeholder */
+    height: 80px; /* Larger image placeholder */
+    margin-bottom: 16px; /* Spacing below image */
+    border-radius: 8px; /* Rounded image corners */
+    object-fit: contain; /* Ensure image fits */
+}
+.skill-text {
+    font-size: 1.1rem; /* Slightly larger text */
+    font-weight: 600; /* Bolder text */
+    color: #333;
+}
+
+/* Responsive adjustments for the grid */
+@media (min-width: 640px) { /* sm */
+    .grid-cols-sm {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+@media (min-width: 768px) { /* md */
+    .grid-cols-md {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+}
+@media (min-width: 1024px) { /* lg */
+    .grid-cols-lg {
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+    }
+}
+@media (min-width: 1280px) { /* xl */
+    .grid-cols-xl {
+        grid-template-columns: repeat(7, minmax(0, 1fr)); /* 7 columns for larger screens */
+    }
+}

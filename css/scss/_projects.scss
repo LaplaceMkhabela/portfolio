@@ -1,0 +1,105 @@
+.projects{
+    min-height: 80vh;
+    min-width: 90vw;
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    grid-template-rows: 50px auto;
+    padding-top: 100px;
+}
+
+.project-grid {
+  grid-column: span 5;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 60px;
+  margin: 50px 0 150px 0;
+}
+
+.project-card {
+  display: flex;
+  max-width: 75rem;
+  padding: .9rem;
+  background-color: var(--bs-white) !important;
+
+  .project-box {
+    width: 55%;
+    position: relative;
+
+    h3 {
+      font-weight: 600;
+      font-size: 1.5rem;
+      line-height: 2rem;
+      margin-bottom: 1rem;
+    }
+
+    p {
+      line-height: 1.625;
+      margin-bottom: 0.75rem;
+      margin-top: 0.5rem;
+      font-family: sans-serif;
+      font-size: 1em;
+      color: #555;
+    }
+
+    ul {
+      display: flex;
+      align-items: center;
+      margin-top: 20px;
+      gap: 10px;
+
+      li {
+        list-style: none;
+
+        p{
+            font-weight: 600;
+        }
+      }
+
+    }
+
+    .controls {
+      position: absolute;
+      bottom: 10px;
+    }
+  }
+
+  span {
+    width: 45%;
+  }
+}
+
+.button {
+  display: inline-flex;
+  align-items: center;
+  padding: 10px 15px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 0.9em;
+  transition: background-color 0.2s ease, border-color 0.2s ease;
+}
+
+.demo-button {
+  background-color: #333; /* Or specific brand color */
+  color: white;
+  border: 1px solid #333;
+}
+
+.demo-button:hover {
+  background-color: #555;
+}
+
+.github-button {
+  background-color: transparent;
+  color: #333;
+  border: 1px solid #333;
+}
+
+.github-button:hover {
+  background-color: #f0f0f0;
+}
+
+.button svg {
+  margin-right: 8px;
+}

@@ -1,0 +1,33 @@
+.education{
+    padding-top: 100px;
+}
+
+.jc-start{
+    justify-content: start;
+
+    img{
+        margin-left: 60px;
+    }
+}
+
+.school-box{
+    margin-left: 50px;
+    display: flex;
+    flex-direction: column;
+    
+    h4{
+        font-size: 1.6rem;
+    }
+
+    span{
+        text-align: left;
+        font-size: 1.2rem;
+        margin: .3rem 0;
+    }
+
+    ul{
+        margin-left: 35px;
+        margin-top: 10px;
+    }
+
+}
