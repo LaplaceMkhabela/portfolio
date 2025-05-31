@@ -89,7 +89,7 @@ function addProjects(projects){
               </div>
             </div>
             <span
-              ><img src="${proj.img}" width="100%" alt="app screenshot"
+              ><img src="${proj.img}" width="100%" alt="app screenshot" loading="lazy"
             /></span>
           </div>
         `
